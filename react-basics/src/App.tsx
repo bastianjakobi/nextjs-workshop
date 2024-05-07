@@ -1,15 +1,10 @@
-import { useState } from 'react'
+import Blog from './components/Blog/Blog'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>React Basics</h1>
-      <p>
-        {count}
-      </p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <h1 className='header'>My Cool React Blog</h1>
+      <Blog />
     </>
   )
 }
