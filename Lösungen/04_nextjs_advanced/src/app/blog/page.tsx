@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default async function Blog() {
 
-    const posts = await fetch('http://localhost:3000/api')
+    const posts = await fetch(`${process.env.URL}/api`);
     const postsJson = await posts.json() as Post[];
     return (
         <main className={globalStyles.main}>

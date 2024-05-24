@@ -9,7 +9,7 @@ interface BlogPostParams {
 
 export default async function BlogPost(props: BlogPostParams) {
     const { postId } = props.params;
-    const post = await fetch(`http://localhost:3000/api/${postId}`);
+    const post = await fetch(`${process.env.URL}/api/${postId}`);
     const postJson = await post.json() as Post;
 
     return (

@@ -6,7 +6,7 @@ Ziel dieses Workshops ist es dir die Grundlagen von React und Next.js zu vermitt
 
 ## Voraussetzungen
 
-Vorraussetzung für die Durchführung des Workshops sind grundlegende Kenntnisse in HTML, CSS und JavaScript. Außerdem solltest du sicherstellen, dass du eine aktuelle Node.js Version (v18.0.0 oder höher) auf deinem Rechner installiert hast.
+Vorraussetzung für die Durchführung des Workshops sind grundlegende Kenntnisse in HTML, CSS und JavaScript. Außerdem solltest du sicherstellen, dass du eine aktuelle Node.js Version (v18.17.0 oder höher) auf deinem Rechner installiert hast.
 
 ## Aufbau
 
