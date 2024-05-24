@@ -4,6 +4,8 @@ import styles from './blog.module.css';
 import { Post } from '@/model/Post';
 import Image from 'next/image';
 
+export const dynamic = "force-dynamic";
+
 export default async function Blog() {
 
     const posts = await fetch(`${process.env.URL}/api`);

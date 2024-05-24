@@ -7,6 +7,8 @@ interface BlogPostParams {
     },
 }
 
+export const dynamic = "force-dynamic";
+
 export default async function BlogPost(props: BlogPostParams) {
     const { postId } = props.params;
     const post = await fetch(`${process.env.URL}/api/${postId}`);
