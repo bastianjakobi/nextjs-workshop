@@ -1,4 +1,4 @@
-# Next.js Grundlagen - Lösung
+# Next.js Grundlagen
 
 ## Zielsetzung
 

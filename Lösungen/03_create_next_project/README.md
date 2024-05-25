@@ -1,4 +1,4 @@
-# Erstellen von Next.js Projekten
+# Erstellen von Next.js Projekten - Lösung
 ## Zielsetzung
 Ziel dieser Übung ist es dir zu zeigen, wie du ein neues Next.js-Projekt erstellen kannst.
 ## Aufgaben

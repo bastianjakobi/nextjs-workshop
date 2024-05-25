@@ -11,13 +11,12 @@ export const dynamic = "force-dynamic";
 
 export default async function BlogPost(props: BlogPostParams) {
     const { postId } = props.params;
-    const post = await (await fetch(`${process.env.URL}/api/${postId}`)).json() as Post;
+    
+    // TODO 3: Post aus API laden und in Variable post speichern
 
     return (
         <main className={styles.main}>
-            <img src={'/' + post.imagePath} alt={post.title} />
-            <h1>{post.title.substring(0, 15)}</h1>
-            <p>{post.body}</p>
+            // TODO 4: post wie in README.md beschrieben rendern
         </main>
     );
 }

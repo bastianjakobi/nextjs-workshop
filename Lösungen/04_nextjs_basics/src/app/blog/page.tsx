@@ -6,7 +6,7 @@ export default function Blog() {
     return (
         <main className={globalStyles.main}>
             <h1>Blog</h1>
-            <p>Das ist die Blog-Seite welche im Rahmen des Next.js Workshops von <b>Bastian Jakobi</b> erstellt wurde.</p>
+            <p>Das ist die Blog-Seite welche im Rahmen des Next.js Workshopserstellt wurde.</p>
             <h2>Blog Posts</h2>
             <ul className={styles.postList}>
                 <li><Link href="/blog/1">Blog Post 1</Link></li>

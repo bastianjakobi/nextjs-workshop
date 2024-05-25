@@ -8,16 +8,15 @@ export const dynamic = "force-dynamic";
 
 export default async function Blog() {
 
-    const posts = await fetch(`${process.env.URL}/api`);
-    const postsJson = await posts.json() as Post[];
+    const posts = await (await fetch(`${process.env.URL}/api`)).json() as Post[];
     return (
         <main className={globalStyles.main}>
             <h1>Blog</h1>
-            <p>Das ist die Blog-Seite welche im Rahmen des Next.js Workshops von <b>Bastian Jakobi</b> erstellt wurde.</p>
+            <p>Das ist die Blog-Seite welche im Rahmen des Next.js Workshops erstellt wurde.</p>
             <div>
                 <h2>Blog Posts</h2>
                 <div className={styles.postGrid}>
-                    {postsJson.slice(0, 6).map(post => (
+                    {posts.slice(0, 6).map(post => (
                         <Link href={`/blog/${post.id}`} key={post.id}>
                             <div className={styles.post}>
                                 <img src={'/' + post.imagePath} alt={post.title} className={styles.postImage} />

@@ -1,0 +1,26 @@
+.postList {
+  list-style-type: none;
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px #ccc;
+  text-align: left;
+}
+
+.postContent {
+  padding: 10px;
+}
+
+.postGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.postImage {
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
+}
