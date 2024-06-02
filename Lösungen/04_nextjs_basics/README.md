@@ -34,13 +34,3 @@ Ziel dieser Übung ist es die Next.js Grundlagen aus der Päsentation zu wiederh
 ## Bonus-Aufgabe: Dynamische Seiten
 
 1. Erstelle eine dynamische Unterseite, die den Inhalt einer Blog-Post anzeigt. Die URL sollte wie folgt aussehen: `/blog/[POST_ID]`. Die Seite sollte den Titel "Blog Post [POST_ID]" und den Inhalt "Das ist der Inhalt des Blog Posts [POST_ID]." anzeigen.
-
-## Bonus-Aufgabe: API Endpunkt
-
-1. **Statischen API Endpunkt erstellen**
-
-- Erstelle einen neuen Ordner namens `api` im `src/app` Verzeichnis und füge einen Route Handler hinzu der die Nachricht "Hello from the API!" zurückgibt.
-
-2. **Dynamischen API Endpunkt erstellen**
-
-- Erstelle innerhalb des `api` Ordners in einem Unterordner einen Route Handler, der aus den URL Parametern einen Namen extrahiert und eine personalisierte Nachricht zurückgibt (z.B. "Hello, [NAME]!").
