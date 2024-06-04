@@ -34,3 +34,4 @@ Ziel dieser Übung ist es die Next.js Grundlagen aus der Päsentation zu wiederh
 ## Bonus-Aufgabe: Dynamische Seiten
 
 1. Erstelle eine dynamische Unterseite, die den Inhalt einer Blog-Post anzeigt. Die URL sollte wie folgt aussehen: `/blog/[postId]`. Die Seite sollte den Titel "Blog Post [POST_ID]" und den Inhalt "Das ist der Inhalt des Blog Posts [POST_ID]." anzeigen.
+2. Füge auf der Blog-Seite Links zu den dynamischen Unterseiten hinzu, die auf einige Blog-Posts verweisen.
