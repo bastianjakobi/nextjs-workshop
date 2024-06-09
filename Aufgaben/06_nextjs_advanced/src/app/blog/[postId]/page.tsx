@@ -16,7 +16,7 @@ export default async function BlogPost(props: BlogPostParams) {
 
     return (
         <main className={styles.main}>
-            // TODO 4: post wie in README.md beschrieben rendern
+            {/* TODO 4: post wie in README.md beschrieben rendern */}
         </main>
     );
 }
