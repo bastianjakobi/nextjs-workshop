@@ -12,7 +12,7 @@ export function PostCard({ post }: PostCardProps) {
     return (
         <Link href={`/blog/${post.id}`}>
             <div className={styles.post}>
-                // TODO 4: Nachfolgend den 'Ausblenden' Button hinzufügen
+                {/* TODO 4: Nachfolgend den 'Ausblenden' Button hinzufügen */}
                 <img src={'/' + post.imagePath} alt={post.title} className={styles.postImage} />
                 <div className={styles.postContent}>
                     <h2>
