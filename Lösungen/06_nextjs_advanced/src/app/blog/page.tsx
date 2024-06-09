@@ -1,13 +1,10 @@
-import Link from 'next/link';
 import globalStyles from '../page.module.css';
-import styles from './blog.module.css';
 import { Post } from '@/model/Post';
-import Image from 'next/image';
+import { BlogGrid } from '@/components/BlogGrid';
 
 export const dynamic = "force-dynamic";
 
 export default async function Blog() {
-
     const posts = await (await fetch(`${process.env.URL}/api`)).json() as Post[];
     return (
         <main className={globalStyles.main}>
@@ -15,23 +12,7 @@ export default async function Blog() {
             <p>Das ist die Blog-Seite welche im Rahmen des Next.js Workshops erstellt wurde.</p>
             <div>
                 <h2>Blog Posts</h2>
-                <div className={styles.postGrid}>
-                    {posts.slice(0, 6).map(post => (
-                        <Link href={`/blog/${post.id}`} key={post.id}>
-                            <div className={styles.post}>
-                                <img src={'/' + post.imagePath} alt={post.title} className={styles.postImage} />
-                                <div className={styles.postContent}>
-                                    <h2>
-                                        {post.title.substring(0, 15)}
-                                    </h2>
-                                    <p>
-                                        {post.body.substring(0, 100)}...
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                    ))}
-                </div>
+                <BlogGrid posts={posts} />
             </div>
         </main>
     );
