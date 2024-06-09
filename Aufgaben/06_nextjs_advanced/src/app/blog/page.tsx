@@ -1,8 +1,4 @@
-import Link from 'next/link';
 import globalStyles from '../page.module.css';
-import styles from './blog.module.css';
-import { Post } from '@/model/Post';
-import Image from 'next/image';
 
 export const dynamic = "force-dynamic";
 
@@ -15,9 +11,7 @@ export default async function Blog() {
             <p>Das ist die Blog-Seite welche im Rahmen des Next.js Workshops erstellt wurde.</p>
             <div>
                 <h2>Blog Posts</h2>
-                <div className={styles.postGrid}>
-                    // TODO 2: posts wie in README.md beschrieben rendern
-                </div>
+                // TODO 2: Posts mit Hilfe der BlogGrid Komponente anzeigen
             </div>
         </main>
     );

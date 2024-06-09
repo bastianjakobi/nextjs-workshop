@@ -1,6 +1,7 @@
 import globalStyles from '../page.module.css';
 import { Post } from '@/model/Post';
 import { BlogGrid } from '@/components/BlogGrid';
+import { ShowAllButton } from '@/components/ShowAllButton';
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +14,7 @@ export default async function Blog() {
             <div>
                 <h2>Blog Posts</h2>
                 <BlogGrid posts={posts} />
+                <ShowAllButton />
             </div>
         </main>
     );

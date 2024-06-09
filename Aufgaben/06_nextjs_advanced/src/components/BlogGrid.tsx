@@ -38,6 +38,12 @@ export function BlogGrid({ posts }: BlogGridProps) {
                     !loading &&
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '1.5rem' }}>
                         <p>Alle Posts ausgeblendet</p>
+                        <a
+                            style={{ cursor: 'pointer', textDecoration: 'underline', marginTop: '1rem' }}
+                            onClick={() => {
+                                localStorage.setItem('hiddenPosts', '[]');
+                                window.location.reload();
+                            }}>Alle Posts anzeigen</a>
                     </div>
             }
         </>
