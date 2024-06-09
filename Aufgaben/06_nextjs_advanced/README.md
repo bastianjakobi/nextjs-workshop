@@ -1,4 +1,4 @@
-# Next.js Fortgeschritten - Lösung
+# Next.js Fortgeschritten
 
 ## Zielsetzung
 
